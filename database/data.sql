@@ -1,0 +1,31 @@
+\c kampi
+
+INSERT INTO mnenja (mnenje_id, mnenje, ocena, uporabnik, avtokamp) VALUES (32, 'Kako smoke ga pill!', 2, 12, 14);
+INSERT INTO mnenja (mnenje_id, mnenje, ocena, uporabnik, avtokamp) VALUES (1, 'Odlično, lepo so nas nastanili!', 5, 1, 1);
+INSERT INTO mnenja (mnenje_id, mnenje, ocena, uporabnik, avtokamp) VALUES (6, 'Ojoj kakšna groza! Nikar ne hodite sem! Vs epovsod so lezle kače!!!', 3, 1, 5);
+INSERT INTO mnenja (mnenje_id, mnenje, ocena, uporabnik, avtokamp) VALUES (8, 'Ojoj kakšna groza! Nikar ne hodite sem! Vs epovsod so lezle kače!!!', 1, 1, 7);
+INSERT INTO mnenja (mnenje_id, mnenje, ocena, uporabnik, avtokamp) VALUES (3, 'Ojoj kakšna groza! Nikar ne hodite sem! Vs epovsod so lezle kače!!!', 1, 1, 2);
+INSERT INTO mnenja (mnenje_id, mnenje, ocena, uporabnik, avtokamp) VALUES (2, 'Zelo lep kamp!', 4, 2, 1);
+INSERT INTO mnenja (mnenje_id, mnenje, ocena, uporabnik, avtokamp) VALUES (7, 'Ojoj kakšna groza! Nikar ne hodite sem! Vs epovsod so lezle kače!!!', 2, 1, 6);
+INSERT INTO mnenja (mnenje_id, mnenje, ocena, uporabnik, avtokamp) VALUES (9, 'Ojoj kakšna groza! Nikar ne hodite sem! Vs epovsod so lezle kače!!!', 1, 1, 8);
+INSERT INTO mnenja (mnenje_id, mnenje, ocena, uporabnik, avtokamp) VALUES (5, 'Ojoj kakšna groza! Nikar ne hodite sem! Vs epovsod so lezle kače!!!', 2, 1, 4);
+INSERT INTO mnenja (mnenje_id, mnenje, ocena, uporabnik, avtokamp) VALUES (4, 'Ojoj kakšna groza! Nikar ne hodite sem! Vs epovsod so lezle kače!!!', 2, 1, 3);
+INSERT INTO mnenja (mnenje_id, mnenje, ocena, uporabnik, avtokamp) VALUES (10, 'Nad kampom sem navdušen, vse kar lahko rečem je: prekrasen kamp, zares lep, zelo prekrasen in lep, prelep in odlične, prav zared je dober, juhuhuhuhuhuhuhuhuh kako smo bili veseli!', 4, 2, 1);
+INSERT INTO mnenja (mnenje_id, mnenje, ocena, uporabnik, avtokamp) VALUES (11, 'Nad kampom sem navdušen, vse kar lahko rečem je: prekrasen kamp, zares lep, zelo prekrasen in lep, prelep in odlične, prav zared je dober, juhuhuhuhuhuhuhuhuh kako smo bili veseli!', 3, 2, 4);
+INSERT INTO mnenja (mnenje_id, mnenje, ocena, uporabnik, avtokamp) VALUES (12, 'Nad kampom sem navdušen, vse kar lahko rečem je: prekrasen kamp, zares lep, zelo prekrasen in lep, prelep in odlične, prav zared je dober, juhuhuhuhuhuhuhuhuh kako smo bili veseli!', 3, 2, 9);
+INSERT INTO mnenja (mnenje_id, mnenje, ocena, uporabnik, avtokamp) VALUES (13, 'Nad kampom sem navdušen, vse kar lahko rečem je: prekrasen kamp, zares lep, zelo prekrasen in lep, prelep in odlične, prav zared je dober, juhuhuhuhuhuhuhuhuh kako smo bili veseli!', 5, 2, 11);
+INSERT INTO mnenja (mnenje_id, mnenje, ocena, uporabnik, avtokamp) VALUES (14, 'Nad kampom sem navdušen, vse kar lahko rečem je: prekrasen kamp, zares lep, zelo prekrasen in lep, prelep in odlične, prav zared je dober, juhuhuhuhuhuhuhuhuh kako smo bili veseli!', 5, 2, 1);
+INSERT INTO mnenja (mnenje_id, mnenje, ocena, uporabnik, avtokamp) VALUES (15, 'Nad kampom sem navdušen, vse kar lahko rečem je: prekrasen kamp, zares lep, zelo prekrasen in lep, prelep in odlične, prav zared je dober, juhuhuhuhuhuhuhuhuh kako smo bili veseli!', 5, 2, 1);
+INSERT INTO mnenja (mnenje_id, mnenje, ocena, uporabnik, avtokamp) VALUES (16, 'O JA! NE MOREM VAM POVEDATI KAKO SMO GA PILI. PIJANI SMO BILI TRI DNI IN ŠE TRI NOČI. JUPI V PIVU JE PRAVICA, V VINU PA JE RESNICA. HOHOHO.', 5, 1, 1);
+INSERT INTO mnenja (mnenje_id, mnenje, ocena, uporabnik, avtokamp) VALUES (17, 'Ne ne in ne nikoli ne grem več sem. Popikali so me trije sršeni, če me niso 7. Za jest je blu pa ok.', 2, 2, 1);
+INSERT INTO mnenja (mnenje_id, mnenje, ocena, uporabnik, avtokamp) VALUES (18, 'Zelo lep kamp!', 4, 2, 10);
+INSERT INTO mnenja (mnenje_id, mnenje, ocena, uporabnik, avtokamp) VALUES (19, 'Zelo lep kamp!', 4, 2, 12);
+INSERT INTO mnenja (mnenje_id, mnenje, ocena, uporabnik, avtokamp) VALUES (20, 'Zelo lep kamp!', 4, 2, 13);
+INSERT INTO mnenja (mnenje_id, mnenje, ocena, uporabnik, avtokamp) VALUES (21, 'Zelo lep kamp!', 4, 2, 3);
+INSERT INTO mnenja (mnenje_id, mnenje, ocena, uporabnik, avtokamp) VALUES (22, 'Zelo lep kamp!', 4, 2, 3);
+INSERT INTO mnenja (mnenje_id, mnenje, ocena, uporabnik, avtokamp) VALUES (23, 'Zelo lep kamp!', 4, 2, 14);
+INSERT INTO mnenja (mnenje_id, mnenje, ocena, uporabnik, avtokamp) VALUES (24, 'Zelo lep kamp!', 4, 2, 15);
+INSERT INTO mnenja (mnenje_id, mnenje, ocena, uporabnik, avtokamp) VALUES (25, 'Zelo lep kamp!', 4, 2, 15);
+INSERT INTO mnenja (mnenje_id, mnenje, ocena, uporabnik, avtokamp) VALUES (30, 'Zelo lepo', 5, 12, 3);
+INSERT INTO mnenja (mnenje_id, mnenje, ocena, uporabnik, avtokamp) VALUES (31, 'mnenje', 5, 12, 1);
+INSERT INTO mnenja (mnenje_id, mnenje, ocena, uporabnik, avtokamp) VALUES (33, 'Jason bilo je res lepo!', 5, 12, 15);

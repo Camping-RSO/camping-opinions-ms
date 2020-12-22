@@ -1,0 +1,35 @@
+version: '3.4'
+
+networks:
+  camping-opinions-ms-network:
+    driver: bridge
+
+services:
+  camping-opinions-ms-postgres:
+    image: postgres:9.6
+    ports:
+      - "5432:5432"
+    restart: always
+    volumes:
+      - ./database/camping-opinions-ms.sql:/docker-entrypoint-initdb.d/camping-opinions-ms.sql
+      - ./database/data.sql:/docker-entrypoint-initdb.d/data.sql
+    environment:
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "postgres"
+      POSTGRES_DB: "kampi"
+    networks:
+      - camping-opinions-ms-network
+
+  camping-opinions-ms-api:
+    image: campingrso/camping-opinions-ms:latest
+    depends_on:
+      - "camping-opinions-ms-postgres"
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8083:80"
+    environment:
+      DB_CONNECTION_STRING: "Host=camping-opinions-ms-postgres;Port=5432;Database=kampi;Username=postgres;Password=postgres;Pooling=true;"
+    networks:
+      - camping-opinions-ms-network
