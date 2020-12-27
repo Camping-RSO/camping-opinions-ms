@@ -28,7 +28,7 @@ namespace CampingOpinionsAPI.Controllers
         /// <remarks>
         /// Primer zahtevka:
         ///
-        ///     GET api/uporabniki/1234/mnenja
+        ///     GET api/mnenja/1234/mnenja
         ///
         /// </remarks>
         /// <returns>Objekt Mnenja</returns>
@@ -68,7 +68,7 @@ namespace CampingOpinionsAPI.Controllers
         /// <remarks>
         /// Primer zahtevka:
         ///
-        ///     GET api/uporabniki/avtokamp/1234/mnenja
+        ///     GET api/mnenja/avtokamp/1234/mnenja
         ///
         /// </remarks>
         /// <returns>Objekt Mnenja</returns>
@@ -109,7 +109,7 @@ namespace CampingOpinionsAPI.Controllers
         /// <remarks>
         /// Primer zahtevka:
         ///
-        ///     GET api/uporabniki/1234/mnenje
+        ///     GET api/mnenja/1234/mnenje
         ///
         /// </remarks>
         /// <returns>Objekt Mnenja</returns>
@@ -149,9 +149,11 @@ namespace CampingOpinionsAPI.Controllers
         /// <remarks>
         /// Primer zahtevka:
         ///
-        ///     POST api/uporabniki/1234/mnenje
+        ///     POST api/menja/1234/mnenje
         ///     {
-        ///         "Datum": "1234-00-12 12:29"
+        ///         "mnenje": "Mnenje uporabnika o avtokampu.",
+        ///         "ocena": 5,
+        ///         "uporabnik": 8
         ///     }
         ///
         /// </remarks>
@@ -193,9 +195,12 @@ namespace CampingOpinionsAPI.Controllers
         /// <remarks>
         /// Primer zahtevka:
         ///
-        ///     PUT api/uporabniki/1234/mnenje
+        ///     PUT api/menja/1234/mnenje
         ///     {
-        ///         "Datum": "Nov datum"
+        ///         "mnenje": "Urejeno mnenje uporabnika o avtokampu.",
+        ///         "ocena": 5,
+        ///         "upotabnik": 2,
+        ///         "avtokamp": 12
         ///     }
         ///
         /// </remarks>
@@ -237,7 +242,7 @@ namespace CampingOpinionsAPI.Controllers
         /// <remarks>
         /// Primer zahtevka:
         ///
-        ///     DELETE api/uporabniki/1234/mnenje
+        ///     DELETE api/menja/1234/mnenje
         ///
         /// </remarks>
         /// <returns>Boolean value</returns>
