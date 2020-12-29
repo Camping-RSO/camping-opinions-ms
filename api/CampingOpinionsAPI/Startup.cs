@@ -81,7 +81,7 @@ namespace CampingOpinionsAPI
             app.UseSwagger();
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Avtokampi");
+                c.SwaggerEndpoint("/camping-opinions/swagger/v1/swagger.json", "Avtokampi");
                 c.RoutePrefix = string.Empty;
             });
 
