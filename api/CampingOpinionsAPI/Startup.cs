@@ -37,14 +37,18 @@ namespace CampingOpinionsAPI
             var connectionString = Environment.GetEnvironmentVariable("DB_CONNECTION_STRING");
 
             // DB models service
-            services.AddEntityFrameworkNpgsql().AddDbContext<avtokampiContext>(options =>
-                options.UseNpgsql(connectionString)
-            );
-
-            // DB models service
-            //services.AddEntityFrameworkNpgsql().AddDbContext<avtokampiContext>(options =>
-            //    options.UseNpgsql(Configuration.GetConnectionString("Avtokampi"))
-            //);
+            if (connectionString == null)
+            {
+                services.AddEntityFrameworkNpgsql().AddDbContext<avtokampiContext>(options =>
+                    options.UseNpgsql(Configuration.GetConnectionString("Avtokampi"))
+                );
+            }
+            else
+            {
+                services.AddEntityFrameworkNpgsql().AddDbContext<avtokampiContext>(options =>
+                    options.UseNpgsql(connectionString)
+                );
+            }
 
             // Repository services
             services.AddScoped<IMnenjaRepository, MnenjaRepository>();
@@ -78,7 +82,18 @@ namespace CampingOpinionsAPI
 
             app.UseHttpsRedirection();
 
-            app.UseSwagger();
+            app.UseSwagger(c =>
+            {
+                c.PreSerializeFilters.Add((swagger, httpReq) =>
+                {
+                    var servers = new List<OpenApiServer>();
+
+                    servers.Add(new OpenApiServer { Url = $"http://{httpReq.Host.Value}/camping-opinions" });
+
+                    swagger.Servers = servers;
+                });
+            });
+
             app.UseSwaggerUI(c =>
             {
                 c.SwaggerEndpoint("/camping-opinions/swagger/v1/swagger.json", "Avtokampi");
